@@ -1,0 +1,43 @@
+@charset "utf-8";
+@font-face {
+font-family: 'Nanum Barun Gothic';
+src: url("/home/newdiq/wwwhome/WEB-INF/classes/static/resources/pages/css/font/NanumBarunGothic.woff") format("truetype");
+}
+@font-face {
+font-family: 'NanumMyeongjo';
+src: url("/home/newdiq/wwwhome/WEB-INF/classes/static/resources/pages/css/font/NanumMyeongjo.ttf") format("truetype");
+}
+@font-face {
+font-family: 'NanumMyeongjoBold';
+src: url("/home/newdiq/wwwhome/WEB-INF/classes/static/resources/pages/css/font/NanumMyeongjoBold.ttf") format("truetype");
+font-weight: bold;
+font-style: bold;
+}
+@font-face {
+font-family: 'NanumMyeongjoExtraBold';
+src: url("/home/newdiq/wwwhome/WEB-INF/classes/static/resources/pages/css/font/NanumMyeongjoExtraBold.ttf") format("truetype");
+}
+.print_body{width:800px;height:1131px;overflow:hidden;margin:0;padding:0;}
+.knclass01{position:relative;width:100%;height:150px;top:0;left:0;text-align:center;}
+.knclass02{position:relative;width:100%;height:120px;top:0;left:0;text-align:center;}
+.knclass03{width:535px;height:120px;}
+.knclass04{position:relative;width:100%;height:115px;top:0;left:0;text-align:center;}
+.knclass05{font-family: 'Nanum Barun Gothic';text-align:center;color:#3d2218;font-size:16px;margin-top:5px}
+.knclass06{position:relative;width:100%;height:150px;top:0;left:0;text-align:center;}
+.knclass07{position:relative;width:100%;height:150px;top:0;left:0;text-align:center;}
+.knclass08{display:inline-block;padding:0 0;color:#423B3B;text-align:center;font-family: 'NanumMyeongjoBold';font-size:40px;line-height:1;white-space:nowrap;}
+.knclass09{border-width:300px;color:#725746;background-color:#725746;height:1px;}
+.knclass10{display:inline-block;padding:0 0;color:#3d2218;text-align:center;font-family: 'NanumMyeongjo';font-size:20px;line-height:1;white-space:nowrap;}
+.knclass11{display:inline-block;padding:0 0;color:#423B3B;text-align:center;font-family: 'NanumMyeongjoExtraBold';font-size:20px;line-height:1;white-space:nowrap;}
+.knclass12{font-family: 'Nanum Barun Gothic';color:#3d2218;font-weight:500;font-size:28px;line-height:1.5;text-align:center;}
+.knclass13{width:100%;height:10px;}
+.knclass14{text-align: right; padding: 15px;}
+.knclass14_2{text-align: right; padding: 5px;}
+.knclass19{text-align: right; padding: 4px;}
+.knclass19_2{text-align: right; padding: 5px;}
+.knclass15{width:100%;height:30px;top:0;left:0;text-align:center;}
+.knclass15_2{width:100%;height:25px;top:0;left:0;text-align:center;}
+.knclass16{position:relative;width:100%;height:135px;top:0;left:0;text-align:center;}
+.knclass17{width:135px;height:135px;}
+.knclass18{text-align: center; padding: 5px;}
+.knclass18_2{text-align: center; padding: 5px;}
