@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  @@include('./include/head.html')
+
+  <body class="front_body">
+    <div class="page_wrap">
+      <div>
+        <a href="#" class="btn_guide_box" id="btnCall">모달 호출</a>
+      </div>
+
+      <script>
+        let modalOption = {
+          message: "정말 회원 탈퇴를 하시겠습니까?",
+          modaltype: "confirm",
+          okcallback() {
+            console.log("okcallback");
+          },
+          cancelcallback() {
+            console.log("cancelcallback");
+          },
+        };
+        designModal(modalOption);
+
+        document.addEventListener("DOMContentLoaded", function () {
+          // event
+          document.querySelector("#btnCall").addEventListener("click", () => {
+            designModal(modalOption);
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>
