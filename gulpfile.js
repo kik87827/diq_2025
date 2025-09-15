@@ -65,6 +65,6 @@ gulp.task("webserver", function () {
 
 gulp.task("watch", function () {
   gulp.watch(["./src/**.html", "./src/*/**.html"], ["fileinclude"]);
-  gulp.watch(["./src/scss/**/*.scss"], ["scss"]);
+  // gulp.watch(["./src/scss/**/*.scss"], ["scss"]);
   gulp.watch(["./src/js/*.js"], ["beautify"]);
 });

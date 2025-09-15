@@ -205,12 +205,12 @@ function designModal(option) {
 
   if (option.modaltype === "confirm") {
     btnHTML = `
-    <a href="javascript:;" class="btn_modal_submit cancelcall"><span class="btn_modal_submit_text">${cancelTextNode}</span></a>
-    <a href="javascript:;" class="btn_modal_submit primary okcall"><span class="btn_modal_submit_text">${okTextNode}</span></a>
+    <a href="javascript:;" class="btn_submit_box modal_submit cancelcall"><span class="btn_submit_box_text">${cancelTextNode}</span></a>
+    <a href="javascript:;" class="btn_submit_box modal_submit primary okcall"><span class="btn_submit_box_text">${okTextNode}</span></a>
     `;
   } else {
     btnHTML = `
-      <a href="javascript:;" class="btn_modal_submit primary okcall"><span class="btn_modal_submit_text">${okTextNode}</span></a>
+      <a href="javascript:;" class="btn_submit_box primary okcall"><span class="btn_submit_box_text">${okTextNode}</span></a>
     `;
   }
 
@@ -220,13 +220,15 @@ function designModal(option) {
         <div class="modal_box_tb">
             <div class="modal_box_td">
                 <div class="modal_box_item">
+                  <div class="modal_card_contents">
                     <div class="modal_box_message_row">
                         <p class="modal_box_message">${option.message}</p>
                     </div>
-                    <div class="btn_modal_submit_wrap">
+                    <div class="btn_bottom_wrap btn_modal_submit_wrap">
                         ${btnHTML}
                     </div>
                     <a href="javascript:;" class="btn_modal_close"></a>
+                  </div>
                 </div>
             </div>
         </div>
@@ -250,7 +252,7 @@ function designModal(option) {
   }, 10);
 
   let btn_modal_submit_wrap = modal_item.querySelector(".btn_modal_submit_wrap");
-  let btn_modal_submit = modal_item.querySelectorAll(".btn_modal_submit");
+  let btn_modal_submit = modal_item.querySelectorAll(".modal_submit");
   let btn_modal_close = modal_item.querySelectorAll(".btn_modal_close");
   if (!submitBtnDisplay) {
     modal_item.querySelector(".modal_box_item").classList.add("submit_not");
