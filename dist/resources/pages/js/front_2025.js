@@ -320,3 +320,34 @@ function designModal(option) {
     }, 500);
   }
 }
+
+
+
+/* max min */
+function maxWidth(option) {
+  const targets = Array.isArray(option.target) ? option.target : [option.target];
+  const mobileOnly = option.mobileOnly || false;
+
+  action();
+  $(window).on("resize", action);
+
+  function action() {
+    targets.forEach((sel) => {
+      const $target = $(sel);
+      let maxWidth = [];
+
+      $target.css({ width: "" });
+      $target.each(function () {
+        maxWidth.push(this.getBoundingClientRect().width); // 소수점까지
+      });
+
+      if (mobileOnly) {
+        if ($(window).width() < 1023) {
+          $target.css({ width: Math.max.apply(null, maxWidth) });
+        }
+      } else {
+        $target.css({ width: Math.max.apply(null, maxWidth) });
+      }
+    });
+  }
+}

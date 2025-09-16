@@ -59,6 +59,14 @@
           </div>
         </div>
       </main>
+      <script>
+        $(window).on("load", function () {
+          maxWidth({
+            target: [".mc_menu_item .text_node"],
+            mobileOnly: true,
+          });
+        });
+      </script>
       @@include('./include/footer.html')
     </div>
   </body>
