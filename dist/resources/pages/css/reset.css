@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* default */
-@import url('webfont.css');
+@import url('webfont_2025.css');
 * {margin:0;padding:0;outline:0;word-break:keep-all; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -o-text-size-adjust: none; -ms-text-size-adjust: none; text-size-adjust:none; -webkit-tap-highlight-color: rgba(255,255,255,0);}
 body {font-family: 'Nanum Barun Gothic',Dotum,verdana,sans-serif;font-size:12px;}
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, address, em, img, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, textarea, table, caption, tbody, tfoot, thead, tr, th, td, header, footer, nav, menu, section, article, aside, main, video {margin:0;padding:0;border:0;vertical-align:baseline;}
