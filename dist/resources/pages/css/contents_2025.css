@@ -340,6 +340,30 @@
 .bullet_list > li{}
 .bullet_list > li:before{}
 
+.data_render_box{}
+.data_obj_wrap{}
+.data_obj_list{}
+.data_obj_list > li{}
+.data_obj_list > li:last-of-type{}
+.data_obj_list > li:before{}
+.data_key_text{}
+.data_key_value{}
+
+.note_form_wrap{}
+.note_form_block{}
+.note_form_block .title_row{}
+.note_form_title{}
+.note_form_block .form_row{}
+.note_form_block:last-of-type{}
+
+input.form_input{}
+input.form_input.align2{}
+
+.note_sign_wrap{}
+.note_sign_para{}
+
+
+
 @media (max-width: 1023px) {
     
 }
