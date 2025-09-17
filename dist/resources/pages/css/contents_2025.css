@@ -339,6 +339,10 @@
 .bullet_list{}
 .bullet_list > li{}
 .bullet_list > li:before{}
+.indent_bullet_list{}
+.indent_bullet_list > li{}
+.indent_bullet{}
+.indent_liquid{}
 
 .data_render_box{}
 .data_obj_wrap{}
@@ -386,6 +390,20 @@ input.props_dom:checked{}
 .pc_legend_item .legend_label{}
 .print_chart_render{}
 .print_chart_render img{}
+
+.sc_simple_form{}
+.sc_simple_tb{}
+.sc_simple_tb th,
+.sc_simple_tb td{}
+.sc_simple_tb th{}
+.sc_simple_tb th .simple_keylabel{}
+.sc_simple_tb td{}
+.sc_simple_tb td input.form_input{}
+.simple_keylabel{}
+
+.sc_message_container{}
+.sc_message_container .bullet_list{}
+.sc_message_container .indent_bullet_list{}
 
 @media (max-width: 1023px) {
     
