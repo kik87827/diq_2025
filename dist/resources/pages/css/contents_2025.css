@@ -405,6 +405,21 @@ input.props_dom:checked{}
 .sc_message_container .bullet_list{}
 .sc_message_container .indent_bullet_list{}
 
+.terms_block_wrap{}
+.terms_block{}
+.terms_block:last-of-type{}
+.terms_guide_box{}
+.clause_title{}
+.clause_block_wrap{}
+.clause_block{}
+.clause_block:last-of-type{}
+.clause_title{}
+.clause_cont_para{}
+.clause_info_list{}
+.clause_info_list > li{}
+.clause_info_list > li:last-of-type{}
+.terms_block .note_sign_wrap{}
+
 @media (max-width: 1023px) {
     
 }
