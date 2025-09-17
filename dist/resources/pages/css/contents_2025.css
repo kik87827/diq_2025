@@ -244,7 +244,7 @@
 .combo_item.active .combo_target {border-radius: 8px 8px 0 0; }
 .combo_item.active .combo_target:after {}
 .combo_item.fluid {display: block; }
-.combo_target { box-sizing: border-box; padding: 12px 40px 10px 15px; border: 1px solid #dbdbdb; border-radius: 5px; display: flex; position: relative; align-items: center; min-height: 43px; background: #fff; }
+.combo_target { box-sizing: border-box; padding: 10px 40px 8px 15px; border: 1px solid #dbdbdb; border-radius: 5px; display: flex; position: relative; align-items: center; min-height: 43px; background: #fff; }
 .combo_target .text_node{font-size: 20px; display:inline-block;  color: #333; word-break:break-all;}
 .combo_target:after {display: block; content: ""; width: 10px; height: 8px; position: absolute; top: 50%; right: 14px; background:url("../images/ico_select_arrow.png") no-repeat 0 0/100% auto; transform:translateY(-50%); }
 

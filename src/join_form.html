@@ -256,15 +256,94 @@
                         </tr>
                         <tr>
                           <th><span class="tb_keynode">성별</span></th>
-                          <td></td>
+                          <td>
+                            <div class="props_item_wrap">
+                              <ul class="props_item_list">
+                                <li>
+                                  <div class="props_item">
+                                    <input type="radio" class="props_dom" name="gender" id="gender_01" />
+                                    <label for="gender_01" class="props_label">남자</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="props_item">
+                                    <input type="radio" class="props_dom" name="gender" id="gender_02" />
+                                    <label for="gender_02" class="props_label">여자</label>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <th><span class="tb_keynode">이메일 주소</span></th>
-                          <td></td>
+                          <td>
+                            <ul class="linked_item_list" data-pcwid="450" style="width: 450px">
+                              <li>
+                                <input type="text" class="form_input" />
+                              </li>
+                              <li class="has_unit">
+                                <span class="linked_unit_node">@</span>
+                              </li>
+                              <li>
+                                <!-- combo -->
+                                <div class="combo_item" id="combo_email">
+                                  <a href="javascript:;" class="combo_target"><span class="text_node">직접입력</span></a>
+                                  <div class="combo_option_group">
+                                    <div class="combo_option_scroll" data-rowCount="5">
+                                      <ul class="combo_option_list">
+                                        <li><a href="javascript:;" data-value="email_0" class="combo_option">직접입력</a></li>
+                                        <li><a href="javascript:;" data-value="email_1" class="combo_option">naver.com</a></li>
+                                        <li><a href="javascript:;" data-value="email_2" class="combo_option">daum.net</a></li>
+                                        <li><a href="javascript:;" data-value="email_3" class="combo_option">gmail.com</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- // combo -->
+                                <script>
+                                  $(function () {
+                                    // combobox callback
+                                    comboChangeCallback({
+                                      target: "combo_email",
+                                      callback(value) {
+                                        console.log(value);
+                                      },
+                                    });
+                                  });
+                                </script>
+                              </li>
+                            </ul>
+                          </td>
                         </tr>
                         <tr>
                           <th><span class="tb_keynode">학력</span></th>
-                          <td></td>
+                          <td>
+                            <!-- combo -->
+                            <div class="combo_item" id="combo_edu" data-pcwid="206" style="width: 206px">
+                              <a href="javascript:;" class="combo_target"><span class="text_node">선택</span></a>
+                              <div class="combo_option_group">
+                                <div class="combo_option_scroll" data-rowCount="5">
+                                  <ul class="combo_option_list">
+                                    <li><a href="javascript:;" data-value="edu_0" class="combo_option">고등학교 졸업</a></li>
+                                    <li><a href="javascript:;" data-value="edu_1" class="combo_option">대학교 졸업</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- // combo -->
+                            <script>
+                              $(function () {
+                                // combobox callback
+                                comboChangeCallback({
+                                  target: "combo_edu",
+                                  callback(value) {
+                                    console.log(value);
+                                  },
+                                });
+                              });
+                            </script>
+                          </td>
                         </tr>
                         <tr>
                           <th><span class="tb_keynode">관련 업무 경력</span></th>
