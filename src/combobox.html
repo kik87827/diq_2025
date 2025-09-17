@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  @@include('./include/head.html')
+  <body class="front_body">
+    <div class="page_wrap">
+      @@include('./include/header.html')
+      <main class="middle_section">
+        <div class="sub_layout_container">
+          <div class="sub_copy_gorup">
+            <h2 class="sub_copy_main">콤보박스</h2>
+          </div>
+          <div class="sub_contents_box">
+            <div class="sub_cont_wrap">
+              <!-- combo -->
+              <div class="combo_item" id="combo_line">
+                <a href="javascript:;" class="combo_target"><span class="text_node">직접 입력</span></a>
+                <div class="combo_option_group theme2">
+                  <div class="combo_option_scroll">
+                    <ul class="combo_option_list">
+                      <li><a href="javascript:;" data-value="option_0" class="combo_option">옵션_1</a></li>
+                      <li><a href="javascript:;" data-value="option_1" class="combo_option">옵션_2</a></li>
+                      <li><a href="javascript:;" data-value="option_2" class="combo_option">옵션옵션옵션옵션_3</a></li>
+                      <li><a href="javascript:;" data-value="option_3" class="combo_option">옵션_4</a></li>
+                      <li><a href="javascript:;" data-value="option_4" class="combo_option">옵션_5</a></li>
+                      <li><a href="javascript:;" data-value="option_5" class="combo_option">옵션_6</a></li>
+                      <li><a href="javascript:;" data-value="option_6" class="combo_option">옵션_7</a></li>
+                      <li><a href="javascript:;" data-value="option_7" class="combo_option">옵션_8</a></li>
+                      <li><a href="javascript:;" data-value="option_8" class="combo_option">옵션_9</a></li>
+                      <li><a href="javascript:;" data-value="option_9" class="combo_option">옵션_10</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- // combo -->
+              <script>
+                // combobox
+                comboFunc();
+
+                // combobox callback
+                comboChangeCallback({
+                  target: "combo_line",
+                  callback(value) {
+                    console.log(value);
+                  },
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('./include/footer.html')
+    </div>
+  </body>
+</html>

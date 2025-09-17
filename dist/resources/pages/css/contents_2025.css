@@ -239,5 +239,34 @@
 }
 
 
+/* combobox */
+.combo_item {display: inline-block; position: relative; }
+.combo_item.active .combo_target {border-radius: 8px 8px 0 0; }
+.combo_item.active .combo_target:after {}
+.combo_item.fluid {display: block; }
+.combo_target { box-sizing: border-box; padding: 12px 40px 10px 15px; border: 1px solid #dbdbdb; border-radius: 5px; display: flex; position: relative; align-items: center; min-height: 43px; background: #fff; }
+.combo_target .text_node{font-size: 20px; display:inline-block;  color: #333; word-break:break-all;}
+.combo_target:after {display: block; content: ""; width: 10px; height: 8px; position: absolute; top: 50%; right: 14px; background:url("../images/ico_select_arrow.png") no-repeat 0 0/100% auto; transform:translateY(-50%); }
 
+.combo_option_group {display: none; position: relative; overflow: hidden; z-index: 100500; background: #FFFFFF; width: calc(100% - 2px); border: 1px solid #E6E6E6; border-top: 0; border-radius: 0 0 4px 4px; box-sizing: border-box; position: absolute; top: calc(100% + 5px); left: 0; }
+.combo_option_group.active {display: block; }
+
+.combo_option_scroll {overflow:hidden; overflow-y: auto; position: relative; }
+
+.combo_option {font-size: 20px; color: #000000; display: block; padding: 10px 15px; word-break:break-all;}
+.combo_option:hover {background:rgba(0,0,0,0.05);}
+.combo_option.disabled {background: #f2f5f5; color: #adb3b3; cursor: default; }
+
+@media (max-width: 1023px) {
+ /*  .combo_option, .combo_target {font-size: 13px; }
+  .combo_target {min-height: 40px; border-radius: 4px; padding-top: 5px; padding-bottom: 5px; }
+  .combo_target:after {width: 5px; height: 5px; margin-top: -4px; }
+  .combo_item {display: flex; width: 100%; }
+  .combo_target {width: 100% !important; flex: 1; } */
+  .combo_target{ min-height:35px; padding: 8px 40px 7px 12px;}
+  .combo_target .text_node{font-size: 14px;}
+  .combo_option{font-size:14px; padding: 8px 12px; }
+}
+
+/* // combobox */
 /* sub layout */

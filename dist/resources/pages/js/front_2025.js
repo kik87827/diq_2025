@@ -50,9 +50,6 @@ function layoutFunc() {
   }
 }
 
-
-
-
 /* popup */
 class DesignPopup {
   constructor(option) {
@@ -178,7 +175,6 @@ class DesignPopup {
     }
   }
 }
-
 
 function designModal(option) {
   const modalGroupCreate = document.createElement("div");
@@ -321,8 +317,6 @@ function designModal(option) {
   }
 }
 
-
-
 /* max min */
 function maxWidth(option) {
   const targets = Array.isArray(option.target) ? option.target : [option.target];
@@ -350,4 +344,160 @@ function maxWidth(option) {
       }
     });
   }
+}
+
+/* combo box */
+function comboFunc() {
+  const $combo_item = $(".combo_item");
+  const $combo_option_group = $(".combo_option_group");
+  const $appBody = $(".page_wrap");
+
+  // combo_target 클릭
+  $(document).on("click", ".combo_target", function (e) {
+    const $thisTarget = $(this);
+    const $thisParent = $thisTarget.closest(".combo_item");
+    const $thisOptionGroup = $thisParent.find(".combo_option_group");
+    let $appendOption = null;
+    let $combo_option_scroll = null;
+
+    if ($thisOptionGroup.length) {
+      comboInit();
+    }
+    comboPosAction();
+
+    // 다른 combo_item 초기화
+    $combo_item.not($thisParent).removeClass("active");
+
+    // $thisTarget.css("width", $thisTarget[0].getBoundingClientRect().width + "px");
+
+    $appendOption = $(`[data-option='${$thisParent.attr("id")}']`);
+    $combo_option_scroll = $appendOption.find(".combo_option_scroll");
+
+    let combo_option_list_count = $combo_option_scroll.attr("data-rowCount") !== undefined ? $combo_option_scroll.attr("data-rowCount") : 5;
+
+    $combo_option_group.not($appendOption).removeClass("active");
+
+    $thisParent.toggleClass("active");
+    $appendOption.toggleClass("active");
+
+    if ($appendOption.hasClass("active")) {
+      /* if ($combo_option_scroll.hasClass("addHeight")) {
+        return;
+      } */
+      let $li = $appendOption.find("li").eq(combo_option_list_count);
+      console.log("test");
+      if ($li.length) {
+        $combo_option_scroll.css("max-height", $li.position().top + "px");
+      }
+      $combo_option_scroll.addClass("addHeight");
+    }
+  });
+
+  // combo_option 클릭
+  $(document).on("click", ".combo_option", function (e) {
+    const $thisTarget = $(this);
+    const $thisParent = $thisTarget.closest(".combo_option_group");
+    const thisTargetText = $thisTarget.text();
+    const $comboCallItem = $(`#${$thisParent.data("option")}`);
+    const $comboCallTarget = $comboCallItem.find(".combo_target");
+
+    if ($thisTarget.hasClass("disabled")) {
+      return;
+    }
+
+    $comboCallTarget.children(".text_node").text(thisTargetText);
+    $thisParent.removeClass("active");
+    $comboCallItem.removeClass("active");
+  });
+
+  // 바깥 클릭 시 닫기
+  $(document).on("click", function (e) {
+    if ($(e.target).closest(".combo_item").length) {
+      return;
+    }
+    comboReset();
+  });
+
+  // 리사이즈
+  let currentWid = $(window).width();
+  $(window).on("resize", function () {
+    if (currentWid !== $(window).width()) {
+      comboPosAction();
+    }
+    currentWid = $(window).width();
+  });
+
+  // Reset 함수
+  function comboReset() {
+    $(".combo_item").removeClass("active");
+    $(".combo_option_group").removeClass("active");
+  }
+
+  // Init 함수
+  function comboInit() {
+    $(".combo_item").each(function (index) {
+      const $thisElement = $(this);
+      const $option_group = $thisElement.find(".combo_option_group");
+
+      if (!$thisElement.attr("id")) {
+        $thisElement.attr("id", "combo_item_" + index);
+        $option_group.attr("data-option", "combo_item_" + index);
+      } else {
+        $option_group.attr("data-option", $thisElement.attr("id"));
+      }
+
+      if ($thisElement.closest(".popup_card_contents").length) {
+        $thisElement.closest(".popup_card_contents").append($option_group);
+      } else {
+        $appBody.append($option_group);
+      }
+    });
+  }
+
+  // 위치 조정 함수
+  function comboPosAction() {
+    $(".combo_option_group").each(function () {
+      const $element = $(this);
+      const $comboCall = $("#" + $element.data("option"));
+      if (!$comboCall.length) return;
+
+      const comboOffset = $comboCall.offset();
+      const comboRect = $comboCall[0].getBoundingClientRect();
+      const comboHeight = comboRect.height;
+
+      if ($comboCall.closest(".popup_card_contents").length) {
+        const $fullpop = $comboCall.closest(".popup_card_contents");
+        const fullpopOffset = $fullpop.offset();
+
+        $element.attr(
+          "style",
+          `
+          top:${comboOffset.top - fullpopOffset.top + comboHeight - 1}px;
+          left:${comboOffset.left - fullpopOffset.left}px;
+          width:${comboRect.width}px;
+        `
+        );
+      } else {
+        $element.attr(
+          "style",
+          `
+          top:${comboOffset.top + comboHeight - 1}px;
+          left:${comboOffset.left}px;
+          width:${comboRect.width}px;
+        `
+        );
+      }
+    });
+  }
+}
+
+// 값 변경 콜백
+function comboChangeCallback(option) {
+  $(document).on("click", `[data-option='${option.target}'] .combo_option`, function (e) {
+    const $this = $(this);
+    const value = $this.data("value");
+    if (typeof option.callback === "function") {
+      option.callback(value);
+    }
+  });
 }

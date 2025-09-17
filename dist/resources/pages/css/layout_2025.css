@@ -1,6 +1,10 @@
 @charset "utf-8";
 
 /* 2025 */
+html:not(.touchmode) ::-webkit-scrollbar {width: 10px;}
+html:not(.touchmode) ::-webkit-scrollbar-thumb {background-color: #ccc;border-radius: 10px;background-clip: padding-box;border: 2px solid transparent;}
+html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;border-radius: 10px;box-shadow: inset 0px 0px 5px transparent;}
+
 .page_wrap{min-width:280px;}
 .header_section{background:#048ee5; position:sticky;top:0;width:100%; z-index:50;border-bottom:1px solid #fff;}
 .header_inner{max-width:1124px; margin:0 auto; padding:0 30px; display:flex; min-height: 85px; gap:35px; align-items: center;}
