@@ -385,7 +385,6 @@ function comboFunc() {
         return;
       } */
       let $li = $appendOption.find("li").eq(combo_option_list_count);
-      console.log("test");
       if ($li.length) {
         $combo_option_scroll.css("max-height", $li.position().top + "px");
       }
