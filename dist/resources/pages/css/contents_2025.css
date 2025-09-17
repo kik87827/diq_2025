@@ -270,3 +270,77 @@
 
 /* // combobox */
 /* sub layout */
+
+
+/* sub contents */
+.article_block_wrap{}
+.article_block{}
+.article_block:last-of-type{}
+.article_title{}
+.article_cont{}
+.textphoto_grid{}
+.textphoto_grid .text_cols{}
+.textphoto_grid .text_cols .article_para{}
+.textphoto_grid .text_cols .article_para:last-of-type{}
+.textphoto_grid .img_cols{}
+.textphoto_grid .img_cols img{}
+.textphoto_grid.type2{}
+.textphoto_grid.type2 .text_cols{}
+.textphoto_grid.type2 .text_cols .article_para{}
+.textphoto_grid.type2 .img_cols{}
+.textphoto_grid.type2 .img_cols img{}
+.article_para{}
+.article_dia{}
+.article_dia img{}
+.article_inblock{}
+.article_inblock:last-of-type{}
+
+.btn_bottom_wrap{}
+.btn_bottom_wrap .btn_spotbox{}
+
+.sc_title_group{}
+.sc_title{}
+.sc_title_copy{}
+.step_dia_wrap{}
+.step_dia_list{}
+.step_dia_list > li{}
+.step_dia_list > li:after{}
+.step_dia_list > li:last-of-type{}
+.step_dia_list > li:last-of-type:after{}
+.step_dia_item{}
+.step_dia_item .key_cols{}
+.step_dia_item .value_cols{}
+.step_key_number{}
+.step_key_unit{}
+.step_value_para{}
+.step_info_wrap{}
+.step_info_list{}
+.step_info_list > li{}
+.step_info_list > li:last-of-type{}
+.step_info_title_row{}
+.step_info_title_row .key_row{}
+.step_info_dl{}
+.step_info_dl dt,
+.step_info_dl dd{}
+.step_info_dl dt{}
+.step_info_dl dt .step_key_item{}
+.step_info_dl dd{}
+.step_info_dl dd .step_info_dcopy{}
+.step_info_dcopy{}
+.step_info_contents_row{}
+.screen_photo_list{}
+.screen_photo_list > li{}
+.screen_photo_list > li .screen_photo{}
+.screen_photo_list > li .screen_photo:last-of-type{}
+.screen_photo_list > li:last-of-type{}
+.screen_photo_list > li .bullet_list{}
+.screen_photo{}
+.screen_photo img{}
+.bullet_list{}
+.bullet_list > li{}
+.bullet_list > li:before{}
+
+@media (max-width: 1023px) {
+    
+}
+/* // sub contents */
