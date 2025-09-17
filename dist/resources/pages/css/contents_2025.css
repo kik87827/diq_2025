@@ -348,6 +348,8 @@
 .data_obj_list > li:before{}
 .data_key_text{}
 .data_key_value{}
+.data_info_para{}
+.data_info_para strong{}
 
 .note_form_wrap{}
 .note_form_block{}
@@ -360,9 +362,30 @@ input.form_input{}
 input.form_input.align2{}
 
 .note_sign_wrap{}
-.note_sign_para{}
+.note_sign_wrap .props_item{}
 
+.props_item{}
+input.props_dom{}
+input.props_dom[type="checkbox"]{}
+.props_label{}
+.props_item.reverse input.props_dom{}
+.props_item.reverse .props_label{}
+input.props_dom:checked{}
 
+.print_chart_wrap{}
+.print_chart_block{}
+.print_chart_block:last-of-type{}
+.print_chart_legend_wrap{}
+.pc_legend_list{}
+.pc_legend_list > li{}
+.pc_legend_list > li:last-of-type{}
+.pc_legend_item{}
+.chart_legend_ico{}
+.chart_legend_ico.shape_gold_line{}
+.chart_legend_ico.shape_bg{}
+.pc_legend_item .legend_label{}
+.print_chart_render{}
+.print_chart_render img{}
 
 @media (max-width: 1023px) {
     
