@@ -18,21 +18,337 @@
                     <h3 class="sc_title">비밀번호 설정</h3>
                     <p class="sc_title_copy">본 계정의 ID는 사업자등록번호입니다. 로그인을 위한 비밀번호를 설정해 주세요.</p>
                   </div>
-                  <div class="cb_cont_wrap">내용이 들어갑니다.</div>
+                  <div class="cb_cont_wrap">
+                    <div class="tb_form_wrap">
+                      <table class="tb_form">
+                        <tr>
+                          <th><span class="tb_keynode">ID(사업자등록번호)</span></th>
+                          <td><div class="tb_value_node">000-00-00000</div></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">비밀번호 입력</span></th>
+                          <td><input type="password" class="form_input" value="************" data-pcwid="300" style="width: 300px" /></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">비밀번호 확인</span></th>
+                          <td>
+                            <input type="password" class="form_input" value="************" data-pcwid="300" style="width: 300px" />
+                            <ul class="indent_bullet_list form_note_list">
+                              <li>
+                                <span class="indent_bullet">※</span>
+                                <div class="indent_liquid">비밀번호는 8~20자 이내, 영문 대·소문자, 숫자, 특수문자를 조합하여 만들어 주세요.</div>
+                              </li>
+                              <li>
+                                <span class="indent_bullet">※</span>
+                                <div class="indent_liquid">사업자등록번호, 생년월일, 전화번호와 같은 개인정보는 사용하실 수 없습니다.</div>
+                              </li>
+                              <li>
+                                <span class="indent_bullet">※</span>
+                                <div class="indent_liquid">입력하신 비밀번호는 안전하게 암호화되어 저장됩니다.</div>
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
                 </div>
                 <div class="cont_brick">
                   <div class="sc_title_group">
                     <h3 class="sc_title">대표자 정보 입력</h3>
                     <p class="sc_title_copy">대표자에 대한 정보를 입력해 주세요.</p>
                   </div>
-                  <div class="cb_cont_wrap">내용이 들어갑니다.</div>
+                  <div class="cb_cont_wrap">
+                    <div class="tb_form_wrap">
+                      <table class="tb_form">
+                        <tr>
+                          <th><span class="tb_keynode">이름</span></th>
+                          <td><div class="tb_value_node">홍길동</div></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">핸드폰 번호</span></th>
+                          <td>
+                            <div class="respon_item_container">
+                              <div class="respon_cols">
+                                <ul class="linked_item_list" data-pcwid="350" style="width: 350px">
+                                  <li>
+                                    <!-- combo -->
+                                    <div class="combo_item" id="combo_cellphone_num">
+                                      <a href="javascript:;" class="combo_target"><span class="text_node">010</span></a>
+                                      <div class="combo_option_group">
+                                        <div class="combo_option_scroll">
+                                          <ul class="combo_option_list">
+                                            <li><a href="javascript:;" data-value="option_0" class="combo_option">010</a></li>
+                                            <li><a href="javascript:;" data-value="option_1" class="combo_option">011</a></li>
+                                            <li><a href="javascript:;" data-value="option_2" class="combo_option">012</a></li>
+                                            <li><a href="javascript:;" data-value="option_3" class="combo_option">017</a></li>
+                                            <li><a href="javascript:;" data-value="option_4" class="combo_option">018</a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- // combo -->
+                                    <script>
+                                      $(function () {
+                                        // combobox callback
+                                        comboChangeCallback({
+                                          target: "combo_cellphone_num",
+                                          callback(value) {
+                                            console.log(value);
+                                          },
+                                        });
+                                      });
+                                    </script>
+                                  </li>
+                                  <li class="has_unit">
+                                    <span class="linked_unit_node">-</span>
+                                  </li>
+                                  <li>
+                                    <input type="text" class="form_input" />
+                                  </li>
+                                  <li class="has_unit">
+                                    <span class="linked_unit_node">-</span>
+                                  </li>
+                                  <li>
+                                    <input type="text" class="form_input" />
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="respon_cols">
+                                <a href="#" class="btn_inline_role"><span class="text_node">핸드폰 인증</span></a>
+                              </div>
+                            </div>
+                            <ul class="indent_bullet_list form_note_list">
+                              <li>
+                                <span class="indent_bullet">※</span>
+                                <div class="indent_liquid">대표자 본인 확인을 위해 ‘핸드폰 인증’ 버튼을 눌러 휴대전화 인증을 진행해 주세요.</div>
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">생년월일</span></th>
+                          <td>
+                            <ul class="inline_eform_list">
+                              <li>
+                                <div class="with_unit_item">
+                                  <div class="main_cols">
+                                    <!-- combo -->
+                                    <div class="combo_item" id="combo_birth_year" data-pcwid="110" style="width: 110px">
+                                      <a href="javascript:;" class="combo_target"><span class="text_node">1950</span></a>
+                                      <div class="combo_option_group">
+                                        <div class="combo_option_scroll" data-rowCount="7">
+                                          <ul class="combo_option_list">
+                                            <li><a href="javascript:;" data-value="option_0" class="combo_option">1950</a></li>
+                                            <li><a href="javascript:;" data-value="option_1" class="combo_option">1960</a></li>
+                                            <li><a href="javascript:;" data-value="option_2" class="combo_option">1970</a></li>
+                                            <li><a href="javascript:;" data-value="option_3" class="combo_option">1980</a></li>
+                                            <li><a href="javascript:;" data-value="option_4" class="combo_option">1990</a></li>
+                                            <li><a href="javascript:;" data-value="option_0" class="combo_option">1950</a></li>
+                                            <li><a href="javascript:;" data-value="option_1" class="combo_option">1960</a></li>
+                                            <li><a href="javascript:;" data-value="option_2" class="combo_option">1970</a></li>
+                                            <li><a href="javascript:;" data-value="option_3" class="combo_option">1980</a></li>
+                                            <li><a href="javascript:;" data-value="option_4" class="combo_option">1990</a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- // combo -->
+                                    <script>
+                                      $(function () {
+                                        // combobox callback
+                                        comboChangeCallback({
+                                          target: "combo_birth_year",
+                                          callback(value) {
+                                            console.log(value);
+                                          },
+                                        });
+                                      });
+                                    </script>
+                                  </div>
+                                  <div class="unit_cols"><span class="text_node">년</span></div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="with_unit_item">
+                                  <div class="main_cols">
+                                    <!-- combo -->
+                                    <div class="combo_item" id="combo_birth_month" data-pcwid="80" style="width: 80px">
+                                      <a href="javascript:;" class="combo_target"><span class="text_node">1</span></a>
+                                      <div class="combo_option_group">
+                                        <div class="combo_option_scroll" data-rowCount="7">
+                                          <ul class="combo_option_list">
+                                            <li><a href="javascript:;" data-value="option_0" class="combo_option">1</a></li>
+                                            <li><a href="javascript:;" data-value="option_1" class="combo_option">2</a></li>
+                                            <li><a href="javascript:;" data-value="option_2" class="combo_option">3</a></li>
+                                            <li><a href="javascript:;" data-value="option_3" class="combo_option">4</a></li>
+                                            <li><a href="javascript:;" data-value="option_4" class="combo_option">5</a></li>
+                                            <li><a href="javascript:;" data-value="option_0" class="combo_option">6</a></li>
+                                            <li><a href="javascript:;" data-value="option_1" class="combo_option">7</a></li>
+                                            <li><a href="javascript:;" data-value="option_2" class="combo_option">8</a></li>
+                                            <li><a href="javascript:;" data-value="option_3" class="combo_option">9</a></li>
+                                            <li><a href="javascript:;" data-value="option_4" class="combo_option">10</a></li>
+                                            <li><a href="javascript:;" data-value="option_4" class="combo_option">11</a></li>
+                                            <li><a href="javascript:;" data-value="option_4" class="combo_option">12</a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- // combo -->
+                                    <script>
+                                      $(function () {
+                                        // combobox callback
+                                        comboChangeCallback({
+                                          target: "combo_birth_month",
+                                          callback(value) {
+                                            console.log(value);
+                                          },
+                                        });
+                                      });
+                                    </script>
+                                  </div>
+                                  <div class="unit_cols"><span class="text_node">월</span></div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="with_unit_item">
+                                  <div class="main_cols">
+                                    <!-- combo -->
+                                    <div class="combo_item" id="combo_birth_date" data-pcwid="90" style="width: 90px">
+                                      <a href="javascript:;" class="combo_target"><span class="text_node">30</span></a>
+                                      <div class="combo_option_group">
+                                        <div class="combo_option_scroll" data-rowCount="7">
+                                          <ul class="combo_option_list">
+                                            <li><a href="javascript:;" data-value="option_0" class="combo_option">1</a></li>
+                                            <li><a href="javascript:;" data-value="option_1" class="combo_option">2</a></li>
+                                            <li><a href="javascript:;" data-value="option_2" class="combo_option">3</a></li>
+                                            <li><a href="javascript:;" data-value="option_3" class="combo_option">4</a></li>
+                                            <li><a href="javascript:;" data-value="option_4" class="combo_option">5</a></li>
+                                            <li><a href="javascript:;" data-value="option_0" class="combo_option">6</a></li>
+                                            <li><a href="javascript:;" data-value="option_1" class="combo_option">7</a></li>
+                                            <li><a href="javascript:;" data-value="option_2" class="combo_option">8</a></li>
+                                            <li><a href="javascript:;" data-value="option_3" class="combo_option">9</a></li>
+                                            <li><a href="javascript:;" data-value="option_4" class="combo_option">10</a></li>
+                                            <li><a href="javascript:;" data-value="option_4" class="combo_option">11</a></li>
+                                            <li><a href="javascript:;" data-value="option_4" class="combo_option">12</a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- // combo -->
+                                    <script>
+                                      $(function () {
+                                        // combobox callback
+                                        comboChangeCallback({
+                                          target: "combo_birth_date",
+                                          callback(value) {
+                                            console.log(value);
+                                          },
+                                        });
+                                      });
+                                    </script>
+                                  </div>
+                                  <div class="unit_cols"><span class="text_node">일</span></div>
+                                </div>
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">성별</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">이메일 주소</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">학력</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">관련 업무 경력</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">컴퓨터 보유 여부</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">컴퓨터 사용 시간</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">디지털 기기 숙련도</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">디지털 교육 참여 의향</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">직원 디지털 교육 의향</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">교육 참여의 어려움</span></th>
+                          <td></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
                 </div>
                 <div class="cont_brick">
                   <div class="sc_title_group">
                     <h3 class="sc_title">사업자 정보 입력</h3>
                     <p class="sc_title_copy">사업자에 대한 정보를 입력해 주세요.</p>
                   </div>
-                  <div class="cb_cont_wrap">내용이 들어갑니다.</div>
+                  <div class="cb_cont_wrap">
+                    <div class="tb_form_wrap">
+                      <table class="tb_form">
+                        <tr>
+                          <th><span class="tb_keynode">사업자 유형</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">업종</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">상시 근로자 수</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">설립 연도</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">사업장 주소</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">지난해 매출액</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">지난해 수익금</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">판매처 비중</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">디지털 활용 정도</span></th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th><span class="tb_keynode">디지털 담당자 유무</span></th>
+                          <td></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="btn_bottom_wrap">
@@ -44,6 +360,12 @@
           </div>
         </div>
       </main>
+      <script>
+        // combobox
+        $(function () {
+          comboFunc();
+        });
+      </script>
       @@include('./include/footer.html')
     </div>
   </body>
