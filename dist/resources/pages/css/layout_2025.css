@@ -117,7 +117,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 	.sub_copy_gorup{padding:15px 0; text-align: left;}
 	.sub_copy_main{font-size:20px;}
 	.sub_copy_sub{margin-top:5px; font-size:14px;}
-	.sub_contents_box{border:10px solid #f3f3f3;}
+	.sub_contents_box{border-width:5px;}
 	.sub_tab_wrap{padding:2px;}
 	.sub_tab_list{display:flex; min-height:30px;gap:2px;}
 	.sub_tab .text_node{font-size:14px; }

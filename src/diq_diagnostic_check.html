@@ -50,7 +50,7 @@
                 <div class="note_form_block">
                   <div class="title_row"><p class="note_form_title">※ 쿠폰 번호</p></div>
                   <div class="form_row">
-                    <input type="text" class="form_input align_c" value="APacTsll0E" data-pcwid="300" style="width: 300px" />
+                    <input type="text" class="form_input align_c" value="APacTsll0E" data-pcwid="300" style="width: 300px" disabled readonly />
                   </div>
                 </div>
               </div>
@@ -69,6 +69,11 @@
           </div>
         </div>
       </main>
+      <script>
+        $(function () {
+          responWidFunc();
+        });
+      </script>
       @@include('./include/footer.html')
     </div>
   </body>

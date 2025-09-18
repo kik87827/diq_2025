@@ -500,3 +500,29 @@ function comboChangeCallback(option) {
     }
   });
 }
+
+
+
+function responWidFunc() {
+  const responDom = $("[data-pcwid]");
+  action();
+  $(window).on("resize", function () {
+    action();
+  });
+
+  function action() {
+    responDom.css("width", "");
+    if ($(window).width() > 1023) {
+      responDom.each(function () {
+        const $this = $(this);
+        if ($this.attr("data-pconly") === "true") {
+          if ($(window).width() > 1440) {
+            $this.css("width", $this.attr("data-pcwid"));
+          }
+          return;
+        }
+        $this.css("width", $this.attr("data-pcwid"));
+      });
+    }
+  }
+}
