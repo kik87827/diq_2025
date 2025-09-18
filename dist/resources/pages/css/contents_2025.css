@@ -339,6 +339,9 @@
 .bullet_list{}
 .bullet_list > li{}
 .bullet_list > li:before{}
+.dot_bullet_list{}
+.dot_bullet_list > li{}
+.dot_bullet_list > li:before{}
 .indent_bullet_list{}
 .indent_bullet_list > li{}
 .indent_bullet_list.form_note_list{}
@@ -395,9 +398,11 @@ input.form_input{}
 .pc_legend_list > li:last-of-type{}
 .pc_legend_item{}
 .chart_legend_ico{}
+.chart_legend_ico.shape_blue_line{}
 .chart_legend_ico.shape_gold_line{}
 .chart_legend_ico.shape_bg{}
 .pc_legend_item .legend_label{}
+.legend_label{}
 .print_chart_render{}
 .print_chart_render img{}
 
@@ -500,6 +505,55 @@ input.form_input{}
 .td_inner_list > li{}
 .td_inner_wrap .respon_with_container{}
 
+.respon_list_tb_wrap{}
+.respon_list_tb{}
+.respon_list_tb thead{}
+.respon_list_tb thead th{}
+.respon_list_tb thead th:last-of-type{}
+.list_thtext{}
+.respon_list_tb tbody{}
+.respon_list_tb tbody td{}
+.respon_list_tb tbody td:last-of-type{}
+.list_tditem{}
+.list_tditem dt,dd{}
+.list_tditem dt{}
+.list_tditem dt .list_thtext{}
+.list_tditem dd{}
+.list_tditem dd .list_tdtext{}
+
+.desc_block_wrap{}
+.desc_block{}
+.desc_block:last-of-type{}
+.desc_title_row{}
+.desc_title{}
+.desc_chart_row{}
+.desc_chart_row img{}
+.desc_info_row{}
+.desc_info_row .dot_bullet_list{}
+
+.desc_multi_block_group{}
+.desc_multi_block{}
+.desc_multi_block:last-of-type{}
+
+.color_emp{}
+.color_emp.red{}
+.color_emp.red *{}
+
+.desc_chart_legend_wrap{}
+.desc_legend_list{}
+.desc_legend_list > li{}
+.desc_legend_item{}
+.desc_legend_item .chart_legend_ico{}
+.desc_legend_item .legend_label{}
+
+.train_chart_wrap{}
+.ruler_wrap{}
+.ruler_slice{}
+.word_balloon_item{}
+.word_balloon{}
+.word_circle_item{}
+.word_circle{}
+.word_circle .text_node{}
 
 @media (max-width: 1023px) {
     
