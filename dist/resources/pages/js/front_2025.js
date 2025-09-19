@@ -501,16 +501,16 @@ function comboChangeCallback(option) {
   });
 }
 
-
-
 function responWidFunc() {
   const responDom = $("[data-pcwid]");
+  const responMbDom = $("[data-mbwid]");
   action();
   $(window).on("resize", function () {
     action();
   });
 
   function action() {
+    responMbDom.css("width", "");
     responDom.css("width", "");
     if ($(window).width() > 1023) {
       responDom.each(function () {
@@ -522,6 +522,31 @@ function responWidFunc() {
           return;
         }
         $this.css("width", $this.attr("data-pcwid"));
+      });
+    } else {
+      responMbDom.each(function () {
+        const $this = $(this);
+        $this.css("width", $this.attr("data-mbwid"));
+      });
+    }
+  }
+}
+
+function followWidth() {
+  const syncTarget = $("[data-syncTarget]");
+
+  action();
+  $(window).on("resize", function () {
+    action();
+  });
+
+  function action() {
+    syncTarget.css("width", "");
+    if ($(window).width() > 1023) {
+      syncTarget.each(function () {
+        const $this = $(this);
+        const $thisSync = $("[data-syncStandard='" + $this.attr("data-syncTarget") + "']");
+        $this.css("width", $thisSync[0].getBoundingClientRect().width);
       });
     }
   }

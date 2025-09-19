@@ -16,79 +16,81 @@
                 <h3 class="sc_title">임시 비밀번호 문자 발송 요청</h3>
                 <p class="sc_title_copy">본 계정의 ID는 사업자등록번호입니다. 임시 비밀번호 발급을 위해 다음 정보를 입력해 주세요.</p>
               </div>
-              <div class="tb_form_wrap">
-                <table class="tb_form">
-                  <tr>
-                    <th><span class="tb_keynode">ID(사업자등록번호)</span></th>
-                    <td><input type="text" class="form_input" data-pcwid="300" style="width: 300px" /></td>
-                  </tr>
-                  <tr>
-                    <th><span class="tb_keynode">대표자 이름</span></th>
-                    <td><input type="text" class="form_input" data-pcwid="300" style="width: 300px" /></td>
-                  </tr>
-                  <tr>
-                    <th><span class="tb_keynode">대표자 핸드폰 번호</span></th>
-                    <td>
-                      <ul class="linked_item_list" data-pcwid="350" style="width: 350px">
-                        <li>
-                          <!-- combo -->
-                          <div class="combo_item" id="combo_cellphone_num">
-                            <a href="javascript:;" class="combo_target"><span class="text_node">010</span></a>
-                            <div class="combo_option_group">
-                              <div class="combo_option_scroll">
-                                <ul class="combo_option_list">
-                                  <li><a href="javascript:;" data-value="cellphone_0" class="combo_option">010</a></li>
-                                  <li><a href="javascript:;" data-value="cellphone_1" class="combo_option">011</a></li>
-                                  <li><a href="javascript:;" data-value="cellphone_2" class="combo_option">012</a></li>
-                                  <li><a href="javascript:;" data-value="cellphone_3" class="combo_option">017</a></li>
-                                  <li><a href="javascript:;" data-value="cellphone_4" class="combo_option">018</a></li>
-                                </ul>
+              <div class="cb_cont_wrap">
+                <div class="tb_form_wrap">
+                  <table class="tb_form">
+                    <tr>
+                      <th><span class="tb_keynode">ID(사업자등록번호)</span></th>
+                      <td><input type="text" class="form_input" data-pcwid="300" style="width: 300px" /></td>
+                    </tr>
+                    <tr>
+                      <th><span class="tb_keynode">대표자 이름</span></th>
+                      <td><input type="text" class="form_input" data-pcwid="300" style="width: 300px" /></td>
+                    </tr>
+                    <tr>
+                      <th><span class="tb_keynode">대표자 핸드폰 번호</span></th>
+                      <td>
+                        <ul class="linked_item_list" data-pcwid="350" style="width: 350px">
+                          <li>
+                            <!-- combo -->
+                            <div class="combo_item" id="combo_cellphone_num">
+                              <a href="javascript:;" class="combo_target"><span class="text_node">010</span></a>
+                              <div class="combo_option_group">
+                                <div class="combo_option_scroll">
+                                  <ul class="combo_option_list">
+                                    <li><a href="javascript:;" data-value="cellphone_0" class="combo_option">010</a></li>
+                                    <li><a href="javascript:;" data-value="cellphone_1" class="combo_option">011</a></li>
+                                    <li><a href="javascript:;" data-value="cellphone_2" class="combo_option">012</a></li>
+                                    <li><a href="javascript:;" data-value="cellphone_3" class="combo_option">017</a></li>
+                                    <li><a href="javascript:;" data-value="cellphone_4" class="combo_option">018</a></li>
+                                  </ul>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <!-- // combo -->
-                          <script>
-                            $(function () {
-                              // combobox callback
-                              comboChangeCallback({
-                                target: "combo_cellphone_num",
-                                callback(value) {
-                                  console.log(value);
-                                },
+                            <!-- // combo -->
+                            <script>
+                              $(function () {
+                                // combobox callback
+                                comboChangeCallback({
+                                  target: "combo_cellphone_num",
+                                  callback(value) {
+                                    console.log(value);
+                                  },
+                                });
                               });
-                            });
-                          </script>
-                        </li>
-                        <li class="has_unit">
-                          <span class="linked_unit_node">-</span>
-                        </li>
-                        <li>
-                          <input type="text" class="form_input" />
-                        </li>
-                        <li class="has_unit">
-                          <span class="linked_unit_node">-</span>
-                        </li>
-                        <li>
-                          <input type="text" class="form_input" />
-                        </li>
-                      </ul>
-                      <ul class="indent_bullet_list form_note_list">
-                        <li>
-                          <span class="indent_bullet">※</span>
-                          <div class="indent_liquid">대표자 핸드폰 번호로 임시 비밀번호가 발송됩니다.</div>
-                        </li>
-                        <li>
-                          <span class="indent_bullet">※</span>
-                          <div class="indent_liquid">
-                            발급받은 임시 비밀번호로 로그인하신 후,
-                            <br />
-                            반드시 ‘나의 정보’의 [비밀번호 변경] 메뉴에서 새 비밀번호로 변경해 주세요.
-                          </div>
-                        </li>
-                      </ul>
-                    </td>
-                  </tr>
-                </table>
+                            </script>
+                          </li>
+                          <li class="has_unit">
+                            <span class="linked_unit_node">-</span>
+                          </li>
+                          <li>
+                            <input type="text" class="form_input" />
+                          </li>
+                          <li class="has_unit">
+                            <span class="linked_unit_node">-</span>
+                          </li>
+                          <li>
+                            <input type="text" class="form_input" />
+                          </li>
+                        </ul>
+                        <ul class="indent_bullet_list form_note_list">
+                          <li>
+                            <span class="indent_bullet">※</span>
+                            <div class="indent_liquid">대표자 핸드폰 번호로 임시 비밀번호가 발송됩니다.</div>
+                          </li>
+                          <li>
+                            <span class="indent_bullet">※</span>
+                            <div class="indent_liquid">
+                              발급받은 임시 비밀번호로 로그인하신 후,
+                              <br />
+                              반드시 ‘나의 정보’의 [비밀번호 변경] 메뉴에서 새 비밀번호로 변경해 주세요.
+                            </div>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
               </div>
               <div class="btn_bottom_wrap">
                 <a href="#" class="btn_submit_box primary">
@@ -103,6 +105,7 @@
         // combobox
         $(function () {
           comboFunc();
+          responWidFunc();
         });
       </script>
       @@include('./include/footer.html')
