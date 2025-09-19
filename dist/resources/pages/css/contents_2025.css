@@ -13,6 +13,7 @@
 @media (max-width:767px){
     .btn_bottom_wrap{gap:10px; margin-top:40px;}
     .btn_submit_box{min-width:0;width:100%;}
+    .btn_bottom_wrap .btn_submit_box:only-of-type{max-width:180px; margin:0 auto;}
 }
 
 /* popup */
@@ -301,6 +302,8 @@
 
 .btn_bottom_wrap{}
 .btn_bottom_wrap .btn_spotbox{}
+
+.sub_cont_wrap > .sc_title_group{margin-bottom:80px;}
 
 .sc_title_group{font-family: "NanumSquareNeo";}
 .sc_title{font-size:32px; color:#333333; font-weight:700; letter-spacing: -1px; line-height: 1.4;}
@@ -598,6 +601,8 @@ input.props_dom:checked{background-position: 0 100%;}
     .article_dia img{max-width: 50%;}
     .article_inblock{margin-bottom:20px;}
 
+    .sub_cont_wrap > .sc_title_group{margin-bottom:40px;}
+
     
     .sc_title{font-size:18px;}
     .sc_title_copy{font-size:15px; margin-top:10px;}
@@ -690,14 +695,17 @@ input.props_dom:checked{background-position: 0 100%;}
 
     /* .cont_brick{margin-bottom:40px;padding-bottom:40px;} */
 
-    .cb_cont_wrap{margin-top:30px;}
+    .cb_cont_wrap{margin-top:20px;}
     .cb_cont_wrap .tb_form_wrap{margin-left:0;}
     .tb_form th, .tb_form td{padding-bottom:10px;}
 
     .tb_keynode{font-size:14px;}
     .tb_value_node{font-size:14px;}
     .tb_form td input.form_input{height:40px;}
-    .tb_form td > .with_unit_item{width:100%;}
+    /* .tb_form td > .with_unit_item{width:100%;}
+    .tb_form td > .with_unit_item .main_cols{flex:1;}
+    .tb_form td > .with_unit_item .main_cols input,
+    .tb_form td > .with_unit_item .main_cols div{width:100%;} */
     
     .tb_form th{padding-right:10px;}
 
@@ -769,8 +777,7 @@ input.props_dom:checked{background-position: 0 100%;}
     .inline_eform_list .with_unit_item .main_cols{flex:1;}
     .inline_eform_list .with_unit_item .main_cols > div,
     .inline_eform_list .with_unit_item .main_cols > input{width:100%; display:block;}
-
-    .respon_with_container{flex-direction: column; gap:10px 0; align-items:flex-start;}
+    .respon_with_container:not(.nobreak){flex-direction: column; gap:5px 0; align-items:flex-start;}
     .with_key_node{font-size:14px;}
     .respon_with_container .with_unit_item{}
     
