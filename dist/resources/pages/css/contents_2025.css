@@ -2,18 +2,18 @@
 
 /* button */
 .btn_bottom_wrap{display:flex; justify-content: center; gap:20px; margin-top:80px;}
-.btn_submit_box{display:inline-flex; min-height:67px; background-color:#686868; border-radius:100px; min-width:280px; justify-content: center; align-items: center;}
-.btn_submit_box_text{font-size:30px; color:#fff; font-weight:700; line-height:1; position:relative;top:1px;}
+.btn_submit_box{display:inline-flex; min-height:67px; background-color:#686868; border-radius:100px; min-width:280px; justify-content: center; align-items: center; text-align:center; box-sizing:border-box; padding:10px 35px;}
+.btn_submit_box_text{font-size:30px; color:#fff; font-weight:700; line-height:1.3; position:relative;top:1px;}
 .btn_submit_box.primary{background-color:#048ee5;}
 @media (max-width:1023px){
     .btn_bottom_wrap{margin-top:60px;}
-    .btn_submit_box{min-height:50px;}
+    .btn_submit_box{min-height:50px;padding:10px 20px;}
     .btn_submit_box_text{font-size:18px; top:1px;}
 }
 @media (max-width:767px){
     .btn_bottom_wrap{gap:10px; margin-top:40px;}
     .btn_submit_box{min-width:0;width:100%;}
-    .btn_bottom_wrap .btn_submit_box:only-of-type{max-width:180px; margin:0 auto;}
+    .btn_bottom_wrap .btn_submit_box:only-of-type{max-width:230px; margin:0 auto;}
 }
 
 /* popup */
