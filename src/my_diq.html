@@ -29,14 +29,22 @@
                 <h3 class="sc_title">나의 DIQ</h3>
                 <p class="sc_title_copy">나의 DIQ 결과를 확인할 수 있습니다.</p>
               </div>
+              <!-- prettier-ignore -->
+              <style>
+                /* PC 가로폭 설정 */
+                #my_diq_tb .wid_num{width:18%;}
+                #my_diq_tb .wid_date{}
+                #my_diq_tb .wid_count{width:20%;}
+                #my_diq_tb .wid_coupon{width:30%;}
+              </style>
               <div class="respon_list_tb_wrap">
-                <table class="respon_list_tb">
+                <table class="respon_list_tb" id="my_diq_tb">
                   <thead>
                     <tr>
-                      <th><span class="list_thtext">차시</span></th>
-                      <th><span class="list_thtext">응시 날짜</span></th>
-                      <th><span class="list_thtext">점수</span></th>
-                      <th><span class="list_thtext">쿠폰</span></th>
+                      <th class="wid_num"><span class="list_thtext">차시</span></th>
+                      <th class="wid_date"><span class="list_thtext">응시 날짜</span></th>
+                      <th class="wid_count"><span class="list_thtext">점수</span></th>
+                      <th class="wid_coupon"><span class="list_thtext">쿠폰</span></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -45,6 +53,32 @@
                         <dl class="list_tditem">
                           <dt><span class="list_thtext">차시</span></dt>
                           <dd><span class="list_tdtext">1</span></dd>
+                        </dl>
+                      </td>
+                      <td>
+                        <dl class="list_tditem">
+                          <dt><span class="list_thtext">응시 날짜</span></dt>
+                          <dd><span class="list_tdtext">2025/09/09</span></dd>
+                        </dl>
+                      </td>
+                      <td>
+                        <dl class="list_tditem">
+                          <dt><span class="list_thtext">점수</span></dt>
+                          <dd><span class="list_tdtext">480</span></dd>
+                        </dl>
+                      </td>
+                      <td>
+                        <dl class="list_tditem">
+                          <dt><span class="list_thtext">쿠폰</span></dt>
+                          <dd><span class="list_tdtext">SDQ25abc04</span></dd>
+                        </dl>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <dl class="list_tditem">
+                          <dt><span class="list_thtext">차시</span></dt>
+                          <dd><span class="list_tdtext">2</span></dd>
                         </dl>
                       </td>
                       <td>
@@ -185,16 +219,16 @@
                           <div class="ruler_slice"></div>
                           <div class="ruler_slice"></div>
                         </div>
-                        <div class="word_balloon_item" style="left: 68.8%">
-                          <div class="word_balloon"><span class="text_node">68.8</span></div>
+                        <div class="word_balloon_item" style="left: 0%">
+                          <div class="word_balloon"><span class="text_node">0</span></div>
                         </div>
-                        <div class="word_circle_item" style="background-color: #f0a219; left: 63.8%">
-                          <div class="word_circle">
-                            <span class="text_node">63.8</span>
+                        <div class="word_circle_item" style="left: 100%">
+                          <div class="word_circle" style="background-color: #f0a219">
+                            <span class="text_node">100</span>
                           </div>
                         </div>
                         <div class="word_circle_item" style="background-color: #a0a0a0; left: 75%">
-                          <div class="word_circle">
+                          <div class="word_circle" style="background-color: #a0a0a0">
                             <span class="text_node">75.0</span>
                           </div>
                         </div>
@@ -253,13 +287,13 @@
                         <div class="word_balloon_item" style="left: 68.8%">
                           <div class="word_balloon"><span class="text_node">68.8</span></div>
                         </div>
-                        <div class="word_circle_item" style="background-color: #f0a219; left: 63.8%">
-                          <div class="word_circle">
+                        <div class="word_circle_item" style="left: 63.8%">
+                          <div class="word_circle" style="background-color: #f0a219">
                             <span class="text_node">63.8</span>
                           </div>
                         </div>
                         <div class="word_circle_item" style="background-color: #a0a0a0; left: 75%">
-                          <div class="word_circle">
+                          <div class="word_circle" style="background-color: #a0a0a0">
                             <span class="text_node">75.0</span>
                           </div>
                         </div>
@@ -318,13 +352,13 @@
                         <div class="word_balloon_item" style="left: 68.8%">
                           <div class="word_balloon"><span class="text_node">68.8</span></div>
                         </div>
-                        <div class="word_circle_item" style="background-color: #f0a219; left: 63.8%">
-                          <div class="word_circle">
+                        <div class="word_circle_item" style="left: 63.8%">
+                          <div class="word_circle" style="background-color: #f0a219">
                             <span class="text_node">63.8</span>
                           </div>
                         </div>
                         <div class="word_circle_item" style="background-color: #a0a0a0; left: 75%">
-                          <div class="word_circle">
+                          <div class="word_circle" style="background-color: #a0a0a0">
                             <span class="text_node">75.0</span>
                           </div>
                         </div>
@@ -383,13 +417,13 @@
                         <div class="word_balloon_item" style="left: 68.8%">
                           <div class="word_balloon"><span class="text_node">68.8</span></div>
                         </div>
-                        <div class="word_circle_item" style="background-color: #f0a219; left: 63.8%">
-                          <div class="word_circle">
+                        <div class="word_circle_item" style="left: 63.8%">
+                          <div class="word_circle" style="background-color: #f0a219">
                             <span class="text_node">63.8</span>
                           </div>
                         </div>
                         <div class="word_circle_item" style="background-color: #a0a0a0; left: 75%">
-                          <div class="word_circle">
+                          <div class="word_circle" style="background-color: #a0a0a0">
                             <span class="text_node">75.0</span>
                           </div>
                         </div>
@@ -448,13 +482,13 @@
                         <div class="word_balloon_item" style="left: 68.8%">
                           <div class="word_balloon"><span class="text_node">68.8</span></div>
                         </div>
-                        <div class="word_circle_item" style="background-color: #f0a219; left: 63.8%">
-                          <div class="word_circle">
+                        <div class="word_circle_item" style="left: 63.8%">
+                          <div class="word_circle" style="background-color: #f0a219">
                             <span class="text_node">63.8</span>
                           </div>
                         </div>
                         <div class="word_circle_item" style="background-color: #a0a0a0; left: 75%">
-                          <div class="word_circle">
+                          <div class="word_circle" style="background-color: #a0a0a0">
                             <span class="text_node">75.0</span>
                           </div>
                         </div>
@@ -513,13 +547,13 @@
                         <div class="word_balloon_item" style="left: 68.8%">
                           <div class="word_balloon"><span class="text_node">68.8</span></div>
                         </div>
-                        <div class="word_circle_item" style="background-color: #f0a219; left: 63.8%">
-                          <div class="word_circle">
+                        <div class="word_circle_item" style="left: 63.8%">
+                          <div class="word_circle" style="background-color: #f0a219">
                             <span class="text_node">63.8</span>
                           </div>
                         </div>
                         <div class="word_circle_item" style="background-color: #a0a0a0; left: 75%">
-                          <div class="word_circle">
+                          <div class="word_circle" style="background-color: #a0a0a0">
                             <span class="text_node">75.0</span>
                           </div>
                         </div>
